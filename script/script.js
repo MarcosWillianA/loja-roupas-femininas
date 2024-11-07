@@ -10,7 +10,7 @@ class Produto {
         this.preco = preco;
     }
 
-    exibirProdutos() {
+    cartaoProduto() {
         const cartaoProdutos = document.createElement('div');
         cartaoProdutos.classList.add('cartao-produtos');
         cartaoProdutos.innerHTML = `
@@ -21,6 +21,31 @@ class Produto {
     }
 }
 
-class Prateleira {
-    
+class Estante {
+    constructor(produto) {
+        this.produto = produto;
+    }
+
+    produto = [];
+
+    exibirProdutos(produto) {
+        areaProdutos.innerHTML = '';
+        areaProdutos.appendChild(produto.cartaoProduto()); 
+    }
+
+    buscarProduto(busca) {
+        botaoBuscar.addEventListener('click', () => {
+            busca = buscador.value;
+            let itensBuscados = listaDeProdutos.filter(produto => produto.nome.toLowerCase().includes(busca));
+            this.exibirProdutos(itensBuscados);
+            if (itensBuscados.length === 0) {
+                areaProdutos.innerHTML = 'Nenhum produto foi encontrado';
+            }
+        })
+    }
 }
+
+
+    const blusaLaranja = new Produto('blusa laranja', 'blusa', 'img/blusa-laranja.png', 79.99);
+    const blusaVerde = new Produto('blusa verde', 'blusa', 'img/blusa-verde001.png', 79,99);
+    const 
