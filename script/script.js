@@ -47,5 +47,12 @@ class Estante {
 
 
     const blusaLaranja = new Produto('blusa laranja', 'blusa', 'img/blusa-laranja.png', 79.99);
-    const blusaVerde = new Produto('blusa verde', 'blusa', 'img/blusa-verde001.png', 79,99);
-    const 
+    const blusaVerde = new Produto('blusa verde', 'blusa', 'img/blusa-verde001.png', 79.99);
+    const botaCouroMarrom = new Produto('bota de couro marrom', 'bota', 'img/bota-couro-marrom001.png', 189.99);
+    const botaCouroPreta = new Produto('bota de couro preta', 'bota', 'img/bota-couro-preta0001.png', 189.99);
+    const saiaAzul = new Produto('saia azul', 'saia', 'img/saia-azul001.png', 99.99);
+    const saiaRosa = new Produto('saia rosa', 'saia', 'img/saia-rosa001.png', 99.99);
+    const vestidoAzul = new Produto('vestido azul', 'vestido', 'img/vestido-azul001.png', 139.99);
+    const vestidoAmarelo = new Produto('vestido amarelo', 'vestido', 'img/vestido-longo-amarelo001.png', 139.99);
+    const vestidoVermelho = new Produto('vestido vermelho', 'vestido', 'img/vestido-vermelho001.png', 139.99);
+
