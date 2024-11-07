@@ -9,7 +9,6 @@
 
 #container {
     padding: 10px;
-    border: 1px solid red;
 }
 
 #campo-busca {
@@ -24,6 +23,7 @@
     border-radius: 5px;
     border: solid 1px #CBD5E1;
     padding-left: 5px;
+    font-size: 1.2em;
 }
 
 .botao {
@@ -38,14 +38,25 @@
     background-color: #9D174D;
 }
 
-#produtos {
-    border: 1px solid orangered;
+#area-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     padding: 10px 0;
 }
 
 .cartao-produtos {
     max-width: 320px;
-    border: 1px solid orange;
+    border-radius: 5px;
     padding: 5px;
-    background-color: #CBD5E1;
+    background-color: #F9A8D4;
+    text-transform: ca;
+}
+
+@media (min-width: 640px) {
+    #area-produtos {
+        display: flex;
+        justify-content: flex-start;
+    }
 }

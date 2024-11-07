@@ -15,7 +15,7 @@ class Produto {
         cartaoProdutos.innerHTML = `
             <img src="${this.imagem}" alt="${this.nome}" />
             <h3>${this.nome}</h3>
-            <p>${this.preco}</p>
+            <p>$${this.preco}</p>
         `;
 
         return cartaoProdutos;
