@@ -7,3 +7,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#container {
+    padding: 10px;
+    border: 1px solid red;
+}
+
+#campo-busca {
+    display: flex;
+    gap: 5px;
+    max-width: 480px;
+    padding: 10px 0;
+}
+
+#buscador {
+    flex-grow: 2;
+    border-radius: 5px;
+    border: solid 1px #CBD5E1;
+    padding-left: 5px;
+}
+
+.botao {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #DB2777;
+    color: #fff;
+}
+
+.botao:active {
+    background-color: #9D174D;
+}
+
+#produtos {
+    border: 1px solid orangered;
+    padding: 10px 0;
+}
+
+.card-produtos {
+    max-width: 320px;
+    border: 1px solid orange;
+    padding: 5px;
+    background-color: #CBD5E1;
+}
